@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores logicos:&&e||</title>
+    <style>
+        body{
+            background-color: chartreuse;
+            color: blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operadores Logicos:&&END / ||OR</h1>
+    <P>Nesta aula iremos aprender um pouco do uso dos operadores (END e OR)</P>
+    <script>
+        var pontos=30;
+
+        //Vitoria => 30 && <=40 || >=70 && <=80
+        if(((pontos >=30)&&(pontos<=40))||((pontos>=70)&&(pontos<=80))){
+            document.write("Ganhou");
+           
+        }else{
+            document.write("Perdeu");
+        }
+    </script>
+    
+</body>
+</html>
