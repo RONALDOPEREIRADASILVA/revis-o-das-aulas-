@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If com Multiplos Retornos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Uso do if com multiplos retornos</h1>
+    <p>Nesta aula vamos aprender usar o if com mais de um retorno!</p>
+
+    <script>
+        var nota=10;
+        var res;
+        var boa;
+        boa="Boa sorte";
+
+        //Se a nota for >90 Aprovado com louvor
+        //Se a nota for >=60 Aprovado
+        //Se a nota for <40 Reprovado
+        //Se a nota for <20 Reprovado com louvor
+        if(nota > 90){
+            res="Aprovado com louvor <br>";
+        }else if(nota>= 60){
+            res="Aprovado <br>";
+        }else if(nota>=40){
+            res="Reprovado <br>";
+        }else if(nota>=20){
+            res="Reprovado <br>";
+        }else{
+            res="Reprovado com louvor <br>"
+        }
+        document.write(res);
+        document.write(boa);
+    </script>
+    
+</body>
+</html>
