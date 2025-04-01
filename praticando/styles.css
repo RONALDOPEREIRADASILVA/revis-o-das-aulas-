@@ -1,0 +1,21 @@
+
+body{
+    background-color: blue;
+}
+nav{
+    background-color: aqua;
+    text-align: center;
+    
+    
+
+}
+ img {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid greenyellow;
+}
+.cen {
+    text-align: center;
+}
