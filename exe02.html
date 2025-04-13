@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculadora dinâmica</title>
+</head>
+<body>
+    <script>
+     //Aplicação cálculadora dinamica
+     var numeroInicial = prompt('informe o primeiro numero');
+
+     var sinal = prompt('informe o sinal');
+
+     while(sinal != '-' && sinal != '+' && sinal != '/' && sinal != '*'){
+        alert('Por favor informe um sinal');
+        sinal = prompt('Informe o sinal da sua operação');
+     }
+
+     var numeroFinal = prompt('infome o numero final');
+
+     //função para converte para numero uma string
+     numeroInicial = parseInt(numeroInicial);
+     numeroFinal = parseInt(numeroFinal);
+
+     var resultadoFinal = 0;
+
+     if(sinal== '+'){
+        resultadoFinal = numeroInicial + numeroFinal;
+
+     } else if(sinal == '-'){
+        resultadoFinal = numeroInicial - numeroFinal;
+     }else if(sinal == '/'){
+        resultadoFinal = numeroInicial / numeroFinal;
+     }else if(sinal == '*'){
+        resultadoFinal = numeroInicial * numeroFinal
+     }
+
+     alert('o resultado é '+ resultadoFinal);
+     
+    </script>
+    
+</body>
+</html>
