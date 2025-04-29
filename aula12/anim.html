@@ -24,9 +24,13 @@
 
     <script>
         var box = document.querySelectorAll('.box')[0];
-        setTimeout(() =>{
+       /* setTimeout(() =>{
           box.classList.add('animEsquerda');
-        },1000);
+        },1000);*/
+
+        box.addEventListener('click' ,() =>{
+            box.classList.add('animEsquerda');
+        })
     </script>
 </body>
 </html>

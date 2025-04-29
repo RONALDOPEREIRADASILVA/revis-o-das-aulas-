@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações</title>
+</head>
+<body>
+    <div class="conteudo">
+    <h2>Titulo do conteudo <span>Ver mais</span></h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quaerat quibusdam ullam, praesentium iusto cum tenetur voluptatem iure dolorum sed molestiae! Quia soluta porro et optio ducimus sit quasi obcaecati?Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+
+
+    </p>
+    </div>
+
+    <script>
+      var span = document.querySelector('.conteudo span');
+
+      span.addEventListener('click' , function(){
+        var conteudo = document.querySelector('.conteudo p');
+
+        if(conteudo.classList.contains('mostrar')){
+            span.innerHTML = 'ver mais!';
+            conteudo.classList.remove('mostrar');
+        }else{
+            span.innerHTML = 'ocultar';
+            conteudo.classList.add('mostrar');
+        } 
+        
+      })
+    </script>
+
+
+   <style>
+    .conteudo h2 span{
+        font-size: 13px;
+        cursor: pointer;
+    }
+    .conteudo p{
+        overflow: hidden;
+        height: 10px;
+        transition: 1s;
+    }
+    .mostrar{
+        height: 200px !important;
+    }
+   </style>
+</body>
+</html>
