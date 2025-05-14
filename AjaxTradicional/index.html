@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax Tradicional</title>
+  </head>
+  <body>
+    <script>
+      setTimeout(function(){
+      var request =new XMLHttpRequest();
+      request.open('GET','https://jsonplaceholder.typicode.com/todos/1',true);
+      request.onload = function(){
+          if(this.status >= 200 && this.status < 400){
+              //request foi feito com sucesso
+              var date = JSON.parse(this.request);
+              console.log(date);
+          }else{
+              //erro
+          }
+      }
+      request.onerror = function(){
+
+      }
+      request.send();
+      },2000)
+    </script>
+  </body>
+</html>
