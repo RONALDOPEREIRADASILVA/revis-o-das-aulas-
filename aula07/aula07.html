@@ -1,32 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>If e  Else</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If e Else</title>
+  </head>
+  <body>
     <script>
+      let n1, n2, r1, r2;
+      //declarei as variaveis
 
-        var n1,n2,r1,r2;
+      n1 = 20;
+      //atribuir o valor 20 a n1
+      n2 = 15;
+      //atribuir o valor 15 a n2.
 
-        n1=20;
-        n2=15;
+      r1 = "seja bem vindo";
+      //atribuir a string 'seja bem vindo' a variavel r1.
 
-        r1="seja bem vindo";
-        r2="bom dia";
+      r2 = "bom dia";
+      //atribuir a string 'bom dia' a variavel r2.
 
-        if(n1<=n2){
-            document.write(r1);
-            alert(r1);
-        }else{
-            document.write(r2);
-            alert(r2);
-        }
-    
+      if (n1 <= n2) {
+        document.write(r1);
+        //se n1 for menor ou igual n2, prite na tela r1'seja bem vindo.
+        alert(r1);
+        // alert seja bem vindo.
+      } else {
+        document.write(r2);
+        //se  não printe na tela r2 'bom dia'
+        alert(r2);
+        //alert bom dia
+      }
     </script>
-    
-    
-</body>
+  </body>
 </html>
