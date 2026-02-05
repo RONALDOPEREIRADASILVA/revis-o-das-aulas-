@@ -1,36 +1,50 @@
 body{
     background:rgb(63, 63, 227) ;
+    /* cor do fundo*/
     font: normal 15pt arial;
-
-}
+    /*tamanho e formato da fonte*/}
 h1{
     text-align: center;
-    
+    /*alinhar o testo h1 no centro*/
 }
 header{
     color: white;
+    /*cor da fonte*/
     text-align: center;
+    /*alinhar testo no centro*/
 
 
 }
 section{
     background: white;
+    /*cor do fundo*/
     border-radius: 10px;
+    /*tamanho em px da borda (arredondamento dos cantos */
     padding: 15px;
+    /*espaçamento interno.cria um respiro entre o conteúdo(testo/lista) e a borda da caixa branca*/
     width: 500px;
+    /*define a largura fixa da seção. ELA TERá SEMPRE 500PX de largura.*/
     margin: auto;
+    /*centraliza o bloco. calcula o espaço iguais nas laterais para que a seção fique no meio da tela. */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.467);
+    /*cria uma sombra ao redor da caixa, dando um efeito 3D. */ 
 }
 select#flista{
     width: 150px
+    /*define a largura fixa da seção. */
 }
 section#res{
     text-align: center;
+    /*alinhar o testo ao centro */
     justify-content: space-between;
+    /*serve para distribuir espaços entre os itens. ele empura os item para cada ponta da linha. */
 }
 
 footer{
     color: white;
+    /*cor da fonte*/
     text-align: center;
+    /*alinhar o testo no centro*/
     font-style: italic;
+    /*stilo da fonte*/
 }
