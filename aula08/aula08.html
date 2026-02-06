@@ -14,17 +14,21 @@
     </style>
 </head>
 <body>
-    <h1>Operadores Logicos:&&END / ||OR</h1>
+    <h1>Operadores Logicos:&& END / ||OR</h1>
     <P>Nesta aula iremos aprender um pouco do uso dos operadores (END e OR)</P>
     <script>
-        var pontos=30;
+        let pontos=30;
+        //declarou a variavel pontos e atribuiu o valar 30.
 
         //Vitoria => 30 && <=40 || >=70 && <=80
         if(((pontos >=30)&&(pontos<=40))||((pontos>=70)&&(pontos<=80))){
             document.write("Ganhou");
+            //se pontos for maior ou  igual a 30 e pontos for menor ou igual a 40 ou pontos maior ou igual a 70 e pontos for menor ou igual a 80 
+            //print na tela ganhou.
            
         }else{
             document.write("Perdeu");
+            //se não perdeu.
         }
     </script>
     
