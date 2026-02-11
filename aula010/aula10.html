@@ -1,24 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Funções</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-   function exe1(){
-    console.log("seja bem vindo");
-   }
-   exe1();
+      function exe1() {
+        console.log("seja bem vindo");
+      }
+      //cria uma função 'exe1' onde printa no console deja bem vindo.
 
-   function test(nome ,idade){
-    console.log("meu nome é " +nome);
-    console.log("e minha idade é"+idade);
-   }
+      exe1();
+      //chama a função
 
-   test("Ronaldo",42);
+      function test(nome, idade) {
+        //cria uma função test e passa os parâmetros 'nome e idade'
+        console.log("meu nome é " + nome);
+        console.log("e minha idade é" + idade);
+      }
+      //comando pra pritar na tela (meu nome é mas o valor atribuido a 'nome' e minha idade é mais o valor atribuido a 'idade')
+
+      test("Ronaldo", 42);
+      //chama a função test e passa os valores  'ronaldo e 42 ' a nome e idade
+
+      for (let i = 0; i <= 10; i++) {
+        //a estrutura for esta criando uma variavel i(contador) e passa uma condição
+        console.log(`Numero de repetição :${i}`);
+      }
+      //comando pra printar na tela 'numero de repetição ' mas uma ação
     </script>
-</body>
+  </body>
 </html>
