@@ -16,18 +16,23 @@
     </div>
 
     <script>
-      var span = document.querySelector('.conteudo span');
-
+      const span = document.querySelector('.conteudo span');
+      //declara a variável span e atribui "classe conteudo e o span"
       span.addEventListener('click' , function(){
-        var conteudo = document.querySelector('.conteudo p');
+        const conteudo = document.querySelector('.conteudo p');
+        //funcao com evento de animaçoa,seleciona a class"conteudo e o span.
 
         if(conteudo.classList.contains('mostrar')){
             span.innerHTML = 'ver mais!';
             conteudo.classList.remove('mostrar');
+            //condiçao da funcao ,se click no span 've mas' ,mostra o conteudo do span
+            // e  "remove" ver mas e adicioa ocultar 
         }else{
             span.innerHTML = 'ocultar';
             conteudo.classList.add('mostrar');
+            //altera o conteudo do span para ocultar e mostra o conteudo da paragrafu
         } 
+
         
       })
     </script>
